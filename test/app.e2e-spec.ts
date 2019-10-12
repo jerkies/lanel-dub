@@ -20,4 +20,18 @@ describe('AppController (e2e)', () => {
       .expect(200)
       .expect('Welcome to Lanel!');
   });
+
+  it('/notes (GET)', (done) => {
+    return request(app.getHttpServer())
+      .get('/notes')
+      .expect(200)
+      .expect('Content-Type', 'application/json; charset=utf-8')
+      .end((err, res) => {
+        if (err) {
+          return done(err);
+        }
+        expect(Array.isArray(res.body)).toBe(true);
+        return done();
+      });
+  });
 });
