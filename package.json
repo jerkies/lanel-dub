@@ -2,8 +2,8 @@
   "name": "lanel-dub",
   "version": "0.0.1",
   "description": "",
-  "author": "",
-  "license": "MIT",
+  "author": "Jerkies Team",
+  "license": "LGPL3",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
