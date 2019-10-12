@@ -10,6 +10,8 @@ $ npm install
 
 ## Running the app
 
+### Node
+
 ```bash
 # development
 $ npm run start
@@ -19,6 +21,14 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+```
+
+### Docker-Compose
+
+Builds the image if not available and runs the container.
+
+```bash
+docker-compose up -d
 ```
 
 ## Test
